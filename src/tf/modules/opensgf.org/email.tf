@@ -49,7 +49,7 @@ resource "cloudflare_dns_record" "opensgf_org_dmarc" {
   zone_id = var.zone_id
   name    = "_dmarc"
   type    = "TXT"
-  content = "v=DMARC1; p=quarantine; rua=mailto:dmarc@opensgf.org; ruf=mailto:dmarc@opensgf.org"
+  content = "v=DMARC1; p=none; pct=100; rua=mailto:re+jgwembv5qxs@dmarc.postmarkapp.com; sp=none; adkim=s; aspf=r;"
   comment = var.comment
   proxied = false
   ttl     = 1
