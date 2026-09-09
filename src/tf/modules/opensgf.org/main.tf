@@ -40,6 +40,13 @@ locals {
       proxied = true
       ttl     = 1
     }
+    gooddads_enrollment_bot_staging = {
+      name    = "gooddads-enrollment-bot-staging"
+      type    = "CNAME"
+      content = var.k3s_tunnel_target
+      proxied = true
+      ttl     = 1
+    }
     healthiermo = {
       name    = "healthiermo"
       type    = "CNAME"
