@@ -12,9 +12,10 @@ module "opensgf_com" {
 module "opensgf_org" {
   source = "./modules/opensgf.org"
 
-  zone_id    = data.cloudflare_zone.opensgf_org.id
-  comment    = local.dns_record_comment
-  aws_region = var.aws_region
+  zone_id           = data.cloudflare_zone.opensgf_org.id
+  comment           = local.dns_record_comment
+  aws_region        = var.aws_region
+  k3s_tunnel_target = local.k3s_tunnel_target
 }
 
 module "takeshelternow_com" {
