@@ -51,8 +51,8 @@ locals {
       name    = "healthiermo"
       type    = "CNAME"
       content = "middleout.levizitting.com"
-      proxied = true
-      ttl     = 1
+      proxied = false
+      ttl     = 300
     }
     apex = {
       name    = "@"
