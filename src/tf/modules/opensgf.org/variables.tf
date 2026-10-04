@@ -13,6 +13,11 @@ variable "k3s_tunnel_target" {
   type        = string
 }
 
+variable "public_edge_target" {
+  description = "Target hostname for services routed through the public edge"
+  type        = string
+}
+
 variable "aws_region" {
   description = "AWS region containing the SES identity"
   type        = string

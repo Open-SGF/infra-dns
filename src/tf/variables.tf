@@ -4,6 +4,12 @@ variable "cloudflare_api_token" {
   sensitive   = true
 }
 
+variable "public_edge_target" {
+  description = "Target hostname for services routed through the public edge"
+  type        = string
+  default     = "public-edge.levizitting.com"
+}
+
 variable "aws_region" {
   description = "AWS region containing the SES identity"
   type        = string
