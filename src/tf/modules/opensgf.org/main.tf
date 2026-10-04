@@ -43,9 +43,9 @@ locals {
     healthiermo = {
       name    = "healthiermo"
       type    = "CNAME"
-      content = var.k3s_tunnel_target
-      proxied = true
-      ttl     = 1
+      content = var.public_edge_target
+      proxied = false
+      ttl     = 300
     }
     apex = {
       name    = "@"
