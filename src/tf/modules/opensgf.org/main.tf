@@ -33,13 +33,6 @@ locals {
       proxied = true
       ttl     = 1
     }
-    files = {
-      name    = "files"
-      type    = "CNAME"
-      content = "middleout.levizitting.com"
-      proxied = true
-      ttl     = 1
-    }
     gooddads_enrollment_bot_staging = {
       name    = "gooddads-enrollment-bot-staging"
       type    = "CNAME"
@@ -75,24 +68,10 @@ locals {
       proxied = false
       ttl     = 1
     }
-    staging_good_dads = {
-      name    = "staging-good-dads"
-      type    = "CNAME"
-      content = "middleout.levizitting.com"
-      proxied = true
-      ttl     = 1
-    }
     staging_api = {
       name    = "staging-sgf-meetup-api"
       type    = "CNAME"
       content = "d-lydsl5yfwc.execute-api.us-east-2.amazonaws.com"
-      proxied = false
-      ttl     = 1
-    }
-    volunteer = {
-      name    = "volunteer"
-      type    = "CNAME"
-      content = "middleout.levizitting.com"
       proxied = false
       ttl     = 1
     }
